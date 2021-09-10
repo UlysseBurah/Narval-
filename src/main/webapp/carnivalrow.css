@@ -1,0 +1,153 @@
+body{
+    background-color: #19191b;
+    /* transition: all 0.3s; */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: block;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Hind,San Francisco,Roboto,Arial,sans-serif;
+    
+}
+
+header{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    
+}
+
+#image_Bullitt{
+    object-fit: cover;
+    filter: brightness(40%);
+    box-shadow: 0 0 10px 10px #19191b inset;
+    /* filter: contrast(1);  */
+    width: 100%;
+    
+    
+}
+
+
+
+.bottom-center{
+    color: white;
+    font-size: 25px;
+    font-family:Hind,San Francisco,Roboto,Arial,sans-serif; 
+    position: absolute;
+    /* padding-top: 10px;
+    padding-left: 200px;
+    padding-right: 200px; */
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -20%); 
+    
+}
+
+.bottom-center p{
+
+    margin-bottom: 50px;
+}
+
+
+.button_subscribe {
+    
+    text-decoration:violet;
+    background-color:#ec3655;
+    color:white;
+    padding: 15px 100px 15px 100px;
+    border-radius: 15px;
+    margin-top: 50px;
+    
+    /* border-top: 1px solid #CCCCCC; */
+    /* border-right: 1px solid #333333; */
+    /* border-bottom: 1px solid #333333; */
+    /* border-left: 1px solid #CCCCCC; */
+}
+
+nav{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+main{
+    margin-top: 60px;
+    font-size: 20px;
+    color: #999;
+    text-align: left;
+    justify-content: center;
+    height: 500px;
+
+}
+
+.whitetext{
+    color: white;
+    margin-left: 60px;  
+    margin-bottom: 10px ;
+}
+
+main p{
+    margin-bottom: 40px;
+}
+
+.storyline{
+    width: 900px;
+}
+
+footer{
+    background-color:#2d3034;
+    width: 100%;
+    height: 300px;
+    font-size: 30px;
+    color: #999;
+    text-align: center;
+}
+footer h1{
+    font-size: 37px;
+    color: white;
+    text-align: center;
+}
+
+.media img {
+    
+    display:block;
+    border-radius: 30%;
+    border: 3px solid white;
+    padding: 10px 10px 10px 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    
+    
+  }
+
+
+.blue img:hover {
+    transition: all 0.15s ease-in;
+    border: 3px solid rgb(25, 16, 107);
+}
+.cyan img:hover {
+    transition: all 0.15s ease-in;
+    border: 3px solid rgb(49, 154, 185);
+}
+.blue2 img:hover {
+    transition: all 0.15s ease-in;
+    border: 3px solid rgb(79, 71, 150);
+}
+.red img:hover {
+    transition: all 0.15s ease-in;
+    border: 3px solid rgb(175, 13, 13)
+}
+
+.media ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-left: -40px;
+}

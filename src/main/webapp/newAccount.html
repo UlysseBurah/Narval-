@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="form.css" rel="stylesheet" type="text/css" />
+    <link href="warning.css" rel="stylesheet" type="text/css" />
+    <link href="logo.png" rel = "icon">
+  </head>
+  <body>
+    <header></header>
+    <section>
+      <div class="hero">
+        <div class="background">
+          <img
+            src="https://images.alphacoders.com/691/thumb-1920-691791.jpg"
+            alt=""
+          />
+          <div class="signup" id="signup">
+            <h1>Create Account</h1>
+            <form  action="ServletJDBC" method="POST">
+              <div class="omo">
+                <input
+                  type="firstname"
+                  id="firstname"
+                  name="firstname"
+                  class="input-box"
+                  placeholder="Your Firstname"
+                  value=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="lastname"
+                  name="lastname"
+                  id="lastname"
+                  class="input-box"
+                  placeholder="Your Lastname"
+                  value=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="input-box"
+                  placeholder="Your Email"
+                  value=""
+                />
+              </div>
+              <h5 id="bdate">Your Birtdate</h5>
+              <div class="form-group-date">
+                <input
+                  type="date"
+                  id="date"
+                  name="trip-start"
+                  value="2020-02-01"
+                  min="1930-01-01"
+                  max="2018-12-31"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="input-box"
+                  placeholder="Your Password"
+                  value=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  name="confirm_password"
+                  id="confirmPass"
+                  class="input-box"
+                  placeholder="Confirm Password"
+                  value=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  class="btn btn-primary"
+                  value="Create Account"
+                  id="sub"
+                />
+              </div>
+              <p>Already have an account ?<a href="login.html">Log In.</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <a class="logoAcc" href="index.html" id="logo"
+        ><img
+          src="https://static.canal-plus.net/resources/mycanal/mycanal-logo.svg"
+          alt="myCANAL"
+      /></a>
+    </section>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="warning">Some text in the Modal..</p>
+      </div>
+    </div>
+    <button id="showdatas" onclick="showProfiles()">show datas</button>
+
+    <div id = "modal2" class="modal">
+      <div class="modal-contentdatas">
+      <span class="close">&times;</span>
+      <table id="datas"><tr><th>firstname</th><th>lastname</th><th>email</th><th>bdate</th><th>password</th><th>verifpassword</th></tr></table>
+    </div>
+    </div>
+    <div class = "datas">
+    <table id = "datasTable">
+     </table>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+    integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
+    integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="user.js"></script>
+  <script src="app3.js"></script>
+  <script src="app2.js"></script>
+  
+
+</html>

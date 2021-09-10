@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="form.css" rel="stylesheet" type="text/css" />
+    <link href="logo.png" rel="icon" />
+  </head>
+  <body>
+    <header></header>
+    <section>
+      <div class="hero">
+        <div class="background">
+          <img
+            src="https://images.alphacoders.com/691/thumb-1920-691791.jpg"
+            alt=""
+          />
+          <div class="signup" id="signup">
+            <h1>Sign In</h1>
+            <form onSubmit="insert()" action="ServletJDBC" method="post">
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  class="input-box"
+                  placeholder="Your Email"
+                  value=""
+                />
+                <span style="color: red" class="help-block"></span>
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  name="password"
+                  class="input-box"
+                  placeholder="Your Password"
+                  value=""
+                />
+                <span style="color: red" class="help-block"></span>
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Log In" />
+              </div>
+              <p>
+                Don't have an account ?<a href="newAccount.html">Create one.</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <a class="logo" href="index.html" id="logo"
+        ><img
+          class="logo"
+          src="https://static.canal-plus.net/resources/mycanal/mycanal-logo.svg"
+          alt="myCANAL"
+      /></a>
+    </section>
+    <div class = "datas">
+    <table id = "datasTable">
+     </table>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+    integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
+    integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="user.js"></script>
+  <script src="app2.js"></script>
+</html>

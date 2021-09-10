@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/glacial-indifference" type="text/css" />
+    <link rel="stylesheet" href="contactUs.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    "Lato:100,300,400,700,900",
+                    "Karla:regular",
+                    "Cookie:regular",
+                ],
+            },
+        });
+    </script>
+    <link rel="icon" src="logo.png" />
+    <title>Yourmarket</title>
+    <script>
+        function logOut() {
+            $.post("logOut.php", function() {});
+            window.location.reload();
+        }
+
+        function viewProfile() {
+            window.location.replace("http://localhost/Yourmarket/myProfile.php");
+        }
+    </script>
+</head>
+
+<body>
+    <section>
+        <div class="contactForm">
+            <form action="ServletJDBC2" method="POST">
+                <h1>CONTACT US</h1>
+                <label for="name">
+                    <h3>Name :</h3>
+                </label>
+                <input required type="text" name="name" placeholder="Your full name...">
+                <label for="email">
+                    <h3>Email :</h3>
+                </label>
+                <input required type="email" name="email"  placeholder="Your email...">
+                <label for="object">
+                    <h3>Object :</h3>
+                </label>
+                <input required type="text" name="object">
+                <label for="message">
+                    <h3>Your message :</h3>
+                </label>
+                <textarea required name="message" id="" cols="70" rows="15" placeholder="Your message..."></textarea>
+                <input type="submit" name="sub" id="sendMessage" value="Submit">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
